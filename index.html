@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="about-container">
+                <img src="me.jpg" alt="A photo of Sabrina Ho" class="profile-photo">
+                <p>Hello! I'm Sabrina Ho, a User Experience Design student, minoring in Business Technology Management, at Wilfrid Laurier University. I am passionate about technology, building my own systems, business strategy, and artistic creativity. I specialize in data visualization, graphic design, and customer service excellence.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Beauty Sales | Momoko</h3>
+                <p>09.23 – 11.23 | Brantford, ON</p>
+                <p>Managed cash and the beauty section of a store specializing in coveted Korean and Japanese beauty products. Provided customer service and product advice to meet client needs.</p>
+            </div>
+
+            <div class="experience">
+                <h3>Administrative Assistant | REMAX Epic Realty Brokerage</h3>
+                <p>06.23 – 08.23 | Markham, ON</p>
+                <p>Supported branch owner with administrative tasks and managed social media marketing posts to enhance brand visibility.</p>
+            </div>
+
+            <div class="experience">
+                <h3>Customer Service & Pastry Maker | Hazukido</h3>
+                <p>03.22 – 07.23 | Markham, ON</p>
+                <p>Provided excellent customer service and contributed to inventory management, baking, and recipe finishing for exclusive pastry products.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>The Wellness Hub</h3>
+                <img src="persona.png" alt="Wellness Hub Client Persona">
+                <p>In this project, we had to figure out a method for the Wellness Hub to be able to reach out to students more effectively. The Wellness Hub provides a lot iof opportunities and experiences.</p>
+            </div>
+
+
+            <div class="project">
+                <h3>Have I completed any more projects?</h3>
+                <p>As I have only recently entered the UX design field, I am still working on more projects to show to an audience and gain more experience.
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out at <a href="mailto:sabrina.ho180@gmail.com">sabrina.ho180@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/sabrina-ho-7b9a85232/details/skills/">LinkedIn</a>. You may also reach me through my phone number at (416) 768 - 9150. I hope to hear from you soon!</p>
+        </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Sabrina Ho. All Rights Reserved.</p>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
