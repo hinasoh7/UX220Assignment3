@@ -5,17 +5,62 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
     background-color: #fff4f4;
+    color: #333;
 }
 
-header {
+header, footer, section {
     background-color: #ffccd5;
-    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+    border: 2px solid #ffccd5;
+    border-radius: 8px;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    background-color: #fff4f4;
+    color: #333;
+}
+
+.skills {
+    margin-top: 1.5rem;
+}
+
+.skill {
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: #ff577f;
+    margin-bottom: 0.25rem;
+    display: inline-block;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ffe6e9;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #ff577f;
+    border-radius: 5px;
 }
 
 nav ul {
@@ -106,6 +151,26 @@ footer a {
 
 footer a:hover {
     color: #333;
+}
+
+/* Floating back-to-top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff577f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #d6336c;
 }
 
 @media (max-width: 768px) {

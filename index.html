@@ -24,7 +24,35 @@
             <h1>About Me</h1>
             <div class="about-container">
                 <img src="me.jpg" alt="A photo of Sabrina Ho" class="profile-photo">
-                <p>Hello! I'm Sabrina Ho, a User Experience Design student, minoring in Business Technology Management, at Wilfrid Laurier University. I am passionate about technology, building my own systems, business strategy, and artistic creativity. I specialize in data visualization, graphic design, and customer service excellence.</p>
+                <div>
+                    <p>Hello! I'm Sabrina Ho, a User Experience Design student, minoring in Business Technology Management, at Wilfrid Laurier University. I am passionate about technology, building my own systems, business strategy, and artistic creativity. I specialize in data visualization, graphic design, and customer service excellence.</p>
+                    <div class="skills">
+                        <div class="skill">
+                            <span class="skill-name">UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Graphic Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">HTML & CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -85,5 +113,9 @@
             document.getElementById('current-year').textContent = new Date().getFullYear();
         </script>
     </footer>
+
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
